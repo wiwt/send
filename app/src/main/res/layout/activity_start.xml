@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/photo"
+        android:text="录像" />
+
+    <Button
+        android:id="@+id/chaifen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/photo"
+        android:text="拆分视频" />
+
+    <Button
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_test_record"
+        android:text="图片直播" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dj"
+        android:text="对讲"
+        android:layout_below="@+id/btn_test_living"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_test_living"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="直播" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_test_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_test_living"
+        android:layout_centerHorizontal="true"
+        android:text="投屏" />
+</RelativeLayout>
