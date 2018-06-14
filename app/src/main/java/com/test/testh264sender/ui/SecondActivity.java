@@ -122,8 +122,9 @@ class StreamIt implements Camera.PreviewCallback {
                     size.height, null);
             if (image != null) {
                 ByteArrayOutputStream outstream = new ByteArrayOutputStream();
-                image.compressToJpeg(new Rect(0, 0, size.width, size.height),
-                        80, outstream);
+//                image.compressToJpeg(new Rect(0, 0, size.width, size.height),
+//                        80, outstream);/
+                outstream.write(data);
                 outstream.flush();
                 // 启用线程将图像数据发送出去
                 Thread th = new MyThread(outstream, ipname);
